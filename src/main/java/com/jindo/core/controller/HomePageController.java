@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HomePageController {
 
-    @GetMapping(value = "/")
+    @GetMapping(value = "/v1")
     public String home(){
         return "Welcome to Spring Boot Webservice";
     }
