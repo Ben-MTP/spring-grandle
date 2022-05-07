@@ -1,6 +1,11 @@
 # Spring Boot build in Grandle
 * Hướng dẫn cách build project với Grandle.
 * So sánh điểm khác biệt với Project Maven thông thường...
+* Project được xây dựng và chạy trên IDE: Eclipse 
+	
+	* Eclipse IDE for Enterprise Java and Web Developers (includes Incubating components)
+	* Version: 2021-06 (4.20.0)
+	* Build id: 20210612-2011
 
 ## Bài 1: Giới thiệu Spring Boot và tài liệu Spring Boot
 * Cách đọc tài liệu Quickstart
@@ -69,16 +74,72 @@
             + Làm sao để MyBatis có thể link được đến:
                 + Model File -> có kiểu dữ liệu tương tự như trong Database. 
                 + Tầng mapper: Khi thực thi câu query bất kì -> class UserExample -> định nghĩa ra các câu query đơn giản.
-                
-                
+    + Flow chính của MyBatis:
+    ![mybatis-flow](docs/mybatis-flow-v1.0.jpg)    
     + Cách 2: Cách tạo ra từ file Java Config
     + Cách 3: Cách tạo ra một file Springboot.xml
     
 
+## Bài 8: Cách sử dụng Criteria MyBatis để lấy dữ liệu
+
++ Việc sử dụng các CreateCriteria để thực thi các câu lệnh query theo cách có sẵn.
+	+ Sử dụng với các điều kiện And
+	+ Các điều kiện Or thì hiện chưa có trong phần này.
+	+ Những logic thì không phải lúc nào cũng chỉ là những điều kiện đó, nên bắt buộc phải custom lại việc query dạng này.
+
+
+
+## Bài 9: Hướng dẫn Custom query xml trong MyBatis
+
++ Tập trung vào việc viết câu query mà muốn custom lại các điều kiện của nó thì sẽ làm như nào.
++ select, update, insert, delete -> ứng với 4 nghiệm vụ hay dùng ở trong Database.
+
+
+
+## Bài 10: Hướng dẫn Config Datasource dùng Java File
+
++ Cách thứ 2: Trong phần cấu hình Datasource để kết nối đến Cơ sở dữ liệu:
+	+ Mục đích sử dụng các Annotation làm việc với Java Code, chứ không dùng những cái có sẵn.
+	+ Khi tạo file Datasource bằng Spring Boot -> các thông tin trong application.properties thì không mã hóa nó.
+	+ Nếu người ra lấy được thì sẽ đọc được các thông số
+	+ Lúc này họ tạo kết nối đến database và thực hiện truy vấn.
+		+ Lý do tại sao Neo dùng các tên alias...
+		+ Không sài các từ khóa mặc định được dùng trong Spring: spring.xxxx mà dùng các từ khóa khác để thay thế chúng.
+	+ Về việc cấu hình Datasource
+		+ Cấu hình Bean cho DataSource
+		+ Cấu hình cho TransactionManager
+		+ Cấu hình cho SqlSessionFactory
+		
+
+## Bài 11: Mã hóa dữ liệu trong Java
+
++ Cách mã hóa dữ liệu các thông tin configuration: user_name, password, url (-urlClassName)
+	+ Vì java sẽ giúp cho công việc mã hóa các thông tin config này.
+		+ Encrypt and decrypt in Java | Java Core
+		[Java AES Encryption Example](https://howtodoinjava.com/java/java-security/java-aes-encryption-example/)
+
+
+## Bài 12: Hướng dẫn Spring Security
+
+
+
+## Bài 13: Spring Security cấu hình form login
+
+
+
+## Bài 14: Thực hiện chức năng đăng nhập + MyBatis
+
+
+
+## Bài 15: Config Spring Security mà không cần đăng nhập
+
+
+
+## Bài 16: 
 ## Reference Document
 * [Youtube](https://www.youtube.com/channel/UCcs1LzFMe-K4FMDDtvbMSww)
 * [Official Gradle documentation](https://docs.gradle.org)
 * [Accessing data with MySQL](https://spring.io/guides/gs/accessing-data-mysql/#scratch)
 * [Common Application Properties](https://docs.spring.io/spring-boot/docs/current/reference/html/application-properties.html)
-
+* [Three ways to configure Spring Boot + Mybatis data source](https://www.programmersought.com/article/8672121650/)
 

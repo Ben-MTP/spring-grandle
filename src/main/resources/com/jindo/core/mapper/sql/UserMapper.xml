@@ -300,4 +300,19 @@
       phone = #{phone,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+  
+  <!-- 
+  + resultMap: BaseResultMap, Map, String, Integer... -> phải khai báo trên thì mới dùng được 
+  + resultType: là dùng cho kiểu giá trị định nghĩa sẵn...
+  + parameterType: định nghĩa kiểm giá trị truyền vào trong hàm...
+  		String, map -> dùng cho nhiều biến
+  -->
+  <select id="getAllUser" parameterType="String" resultType="map">
+    select * from user_manhkm where user_name = #{userName}
+  </select>
+  
+  <select id="getUserByUserNameAndId" parameterType="map" resultType="map">
+    select * from user_manhkm 
+    where user_name = #{userName} and id = #{id}
+  </select>
 </mapper>
