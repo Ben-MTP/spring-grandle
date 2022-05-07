@@ -60,6 +60,21 @@
         + Nắm rõ luồng đi chính trong Spring Boot sẽ dễ dàng thao tác với các thành phần bên trong nhớ, cũng như dễ trong việc chỉnh sửa nó sau này.
     ![draw-flow-spring-boot](docs/draw-flow-spring-boot-v1.0.jpg)
 
+## Bài 7: Hướng dẫn config DataSource MyBatis
++ Có bao nhiêu cách config Database: 3 cách chính
+    + Cách 1: Cách config từ application.properties
+        + Three way to config Spring Boot Data Source
+        + Giới thiệu chung về MyBatis:
+            + Làm thế nào để có thể kết nối đến Databa.
+            + Làm sao để MyBatis có thể link được đến:
+                + Model File -> có kiểu dữ liệu tương tự như trong Database. 
+                + Tầng mapper: Khi thực thi câu query bất kì -> class UserExample -> định nghĩa ra các câu query đơn giản.
+                
+                
+    + Cách 2: Cách tạo ra từ file Java Config
+    + Cách 3: Cách tạo ra một file Springboot.xml
+    
+
 ## Reference Document
 * [Youtube](https://www.youtube.com/channel/UCcs1LzFMe-K4FMDDtvbMSww)
 * [Official Gradle documentation](https://docs.gradle.org)

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+  PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+  "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://localhost:3306/dbnetflix"
+                        userId="root"
+                        password="12345678aA">
+        </jdbcConnection>
+
+        <javaTypeResolver >
+            <property name="forceBigDecimals" value="false" />
+        </javaTypeResolver>
+
+        <!-- Mục đích sẽ tạo ra các file Model
+        Tạo ra một class model -->
+        <javaModelGenerator targetPackage="com.jindo.core.model" targetProject="spring-grandle"/>
+
+        <sqlMapGenerator targetPackage="com.jindo.core.mapper.sql"  targetProject="spring-grandle/src/main/resources"/>
+
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.jindo.core.mapper"  targetProject="spring-grandle"/>
+
+        <table schema="dbnetflix" tableName="user_manhkm" domainObjectName="User" >
+        </table>
+
+    </context>
+</generatorConfiguration>
