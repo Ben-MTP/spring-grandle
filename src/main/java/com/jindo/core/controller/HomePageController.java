@@ -72,6 +72,5 @@ public class HomePageController {
     public String quickstart(){
         return "Hello";
     }
-
-
+    
 }

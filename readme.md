@@ -116,11 +116,20 @@
 + Cách mã hóa dữ liệu các thông tin configuration: user_name, password, url (-urlClassName)
 	+ Vì java sẽ giúp cho công việc mã hóa các thông tin config này.
 		+ Encrypt and decrypt in Java | Java Core
-		[Java AES Encryption Example](https://howtodoinjava.com/java/java-security/java-aes-encryption-example/)
+		+ [Java AES Encryption Example](https://howtodoinjava.com/java/java-security/java-aes-encryption-example/)
 
 
 ## Bài 12: Hướng dẫn Spring Security
-
++ Spring Security
+	+ Vì sau này cho các chức năng đăng nhập v.v đòi hỏi độ bảo mật cao hơn. Chống lại các tấn công, chứng thực JSON, chứng thực API.
+	+ Cách tìm hiểu từ ban đầu:
+		+ Spring Security nó làm gì, tại sao phải dùng nó.
+			+ Spring Security Tutorial | Basic | Example (-sau khi đi qua phần Basic)
+				+ Nên tìm Project trên github -> giúp biết họ đang làm gì, cấu hình như nào.
+			+ Nếu muốn biết nó còn mở rộng gì nữa thì vào chính trang chủ của nó.
+	
+	+ Custom lại trạng login.
+			
 
 
 ## Bài 13: Spring Security cấu hình form login

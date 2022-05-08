@@ -16,4 +16,16 @@ public class TemplateController {
         ModelAndView modelAndView = new ModelAndView("index");
         return modelAndView;
     }
+    
+    @GetMapping(value = "/login")
+    public ModelAndView login(){
+        ModelAndView modelAndView = new ModelAndView("login");
+        return modelAndView;
+    }
+    
+    @GetMapping(value = "/home")
+    public ModelAndView home(){
+        ModelAndView modelAndView = new ModelAndView("home");
+        return modelAndView;
+    }
 }

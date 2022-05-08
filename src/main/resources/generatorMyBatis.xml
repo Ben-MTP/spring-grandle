@@ -16,8 +16,10 @@
             <property name="forceBigDecimals" value="false" />
         </javaTypeResolver>
 
-        <!-- Mục đích sẽ tạo ra các file Model
-        Tạo ra một class model -->
+        <!-- 
+        Mục đích sẽ tạo ra các file Model
+        Tạo ra một class model 
+        -->
         <javaModelGenerator targetPackage="com.jindo.core.model" targetProject="spring-grandle"/>
 
         <sqlMapGenerator targetPackage="com.jindo.core.mapper.sql"  targetProject="spring-grandle/src/main/resources"/>
