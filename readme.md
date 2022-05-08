@@ -133,14 +133,21 @@
 
 
 ## Bài 13: Spring Security cấu hình form login
-
++ Kiểm tra lại phần giao diện bị bể -> không ăn css cho form login
+	+ Nếu các request vào các trang đó đều phải chứng thực thì để xem được các file css, js của nó thì đều phải cấp quyền thì mới xem được -> 1 điểm cộng
+	+ Xây dựng các loại chứng thực
+		+ AuthenticationManagerBuilder
+		
 
 
 ## Bài 14: Thực hiện chức năng đăng nhập + MyBatis
-
++ Bài trước đã cấu hình dược phần Spring Security nhưng nó chỉ là phần tĩnh, chưa động
+	+ Giờ muốn cấu hình nó động -> lấy dữ liệu từ Database.
+	
 
 
 ## Bài 15: Config Spring Security mà không cần đăng nhập
++ Client -> khi vào một trang thì không phải lúc nào cũng bắt họ phải login vào.
 
 
 
