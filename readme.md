@@ -151,7 +151,15 @@
 
 
 
-## Bài 16: 
+## Bài 16: Tiếp tục phát triển với Spring Security
++ Tìm hiểu các load css, js trong Thymeleaf với Spring Boot
++ Xây dựng trang đăng nhập -> Basic có các phần login, logout
++ Các định các ROLE có trong lúc Authorization
++ Phân quyền đến các menu, url tương ứng sẽ như thế nào.
++ Phân tích trong project ocs-support.
+
+
+
 ## Reference Document
 * [Youtube](https://www.youtube.com/channel/UCcs1LzFMe-K4FMDDtvbMSww)
 * [Official Gradle documentation](https://docs.gradle.org)
