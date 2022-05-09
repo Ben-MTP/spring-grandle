@@ -6,6 +6,7 @@
 	* Eclipse IDE for Enterprise Java and Web Developers (includes Incubating components)
 	* Version: 2021-06 (4.20.0)
 	* Build id: 20210612-2011
+    * Direction project local: E:\1_CODING\LearnSpringBoot\ccb-project\spring-grandle
 
 ## Bài 1: Giới thiệu Spring Boot và tài liệu Spring Boot
 * Cách đọc tài liệu Quickstart
